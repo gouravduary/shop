@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+*::-webkit-scrollbar {
+    display: none;
+}
+
+nav{
+    height: 100vh;
+    width: 250px;
+    background: #fff;
+
+    position: absolute;
+    top: 0;
+    left: -400px;
+    z-index:9;
+}
+nav .header{
+    height: 13%;
+    background: #0080ff;
+    color: white;
+    padding: 10px;
+    position: relative;
+}
+nav .header .close{
+    font-size: 1.7em;
+    position: absolute;
+    right: 8px;
+    color: #fff;
+}
+nav .header .user-account{
+    display: flex;
+    justify-content: space-between;
+}
+nav .header .user-account a{
+    color: #fff;
+    text-decoration: none;
+}
+nav .header .user-account div{
+    margin: 10px 0;
+    height: 30px;
+    width: 110px;
+    border: 1px solid white;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav .footer{
+  height: 87%;
+  overflow: scroll;
+}
+nav .footer ul{
+    padding: 10px;
+    list-style: none;
+}
+nav .footer ul a{
+    color: #000;
+    text-decoration: none;
+}
+nav .footer ul li:hover{
+    color: #fff;
+    background: #000;
+    text-align: center;
+    border-radius: 4px;
+}
+nav .footer ul li{
+    margin: 2px 0;
+    padding: 10px 0;
+}
+
+hr{
+    background: #cccccc;
+    width: 100%;
+    height: 4px;
+    border: none;
+}
+
+nav .contact{
+    padding: 10px;
+}
+nav .contact .head, nav .location p{
+    margin-bottom: 10px;
+    font-size: 1.3em;
+    font-weight: 900;
+}
+nav .contact :nth-child(2){
+    margin-bottom: 5px;
+}
+
+nav .footer .location{
+    padding: 10px;
+}
+nav .location .map iframe{
+    width: 225px;
+    height: 225px;
+    margin: 10px auto;
+    border: none;
+    border-radius: 3px;
+}
+
+.credits{
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  font-size: .8em;
+  border-radius:8px 8px 0 0;
+}
+
+
+.bars{
+  height: 10vh;
+  width: 100%;
+  background: #FFE15D;
+  font-size: 2em;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top:0;
+}
+.bars .hamburger{
+  position: absolute;
+  right: 20px;
+}
+.bars .cart-icon{
+    position:absolute ;
+    right:70px;;
+}
+.shadow{
+  height: 100vh;
+  width: 100vw;
+  background: radial-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.6));
+  position: absolute;
+  top:0;
+  left: -400px;
+  z-index:7;
+}
+.bars p{
+    padding:0 10px;
+}
+
+main{
+    padding:0 10px;
+    height:90vh;
+    overflow:scroll;
+}
+
+.user-address{
+    background: #cccccc;
+    margin: 0 -10px;
+    padding: 5px 10px;
+}
+.user-address span{
+    text-decoration:underline ;
+}
+
+.categories{
+    margin: 10px auto;
+    height:80px;
+    width:98%;
+    overflow: scroll;
+    display: flex;
+}
+.categories .list{
+    padding:10px;
+    margin-right: 2px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+}
+.categories img{
+    height:50px;
+    width:50px;
+    border:2px solid white;
+}
+
+.promotional{
+    height: 100px;
+    width:98%;
+    border-radius:6px;
+    background:#ccc;
+    margin:10px auto;
+}
+
+.products{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.products img{
+    height:80px;
+    width:80px;
+}
+.products .list{
+    height: 150px;
+    width: 32%;
+    margin: 2px 0;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+}
+
+.items .list{
+    height:80px;
+    width:98%;
+    border:1px solid #ccc;
+    border-radius:6px;
+    margin: 4px;
+    display:flex;
+    align-items: center;
+    padding:5px 10px;
+    position: relative ;
+    text-align:center;
+}
+
+.add{
+    display:flex;
+    background:#22852e;
+    color: #fff;
+    border-radius:4px;
+    position: absolute;
+    right:15px;
+}
+.add .text{
+    border-right:1px solid #fff;
+    border-left:1px solid #fff;
+}
+.add .text, .add .symbol{
+    padding:6px 10px;
+}
+.items img{
+    height:80px;
+    width:80px;
+}
+
+.window{
+    height:80vh;
+    width:94%;
+    background:#fff;
+    border:3px solid #000;
+    border-radius:6px;
+    position:absolute;
+    top:11vh;
+    display:none;
+    color:#000;
+}
+.window .header{
+    color:#fff;
+    background:#000;
+    height:10%;
+    font-size:1.8em;
+    font-weight:900;
+    position:relative;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.window p i{
+    font-size:1.5em;
+    position:absolute;
+    right:5px;
+    color:#000;
+    background:#fff;
+    padding: 0 8px;
+    border-radius:6px;
+}
